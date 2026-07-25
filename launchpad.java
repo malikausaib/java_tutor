@@ -24,6 +24,17 @@ class launchpad
     }
   }
 
+  /* difference function */
+  private static int findDiff(int data1, int data2)
+  {
+    if(data1>data2){
+      return data1-data2;
+    }
+    else{
+      return data2-data1;
+    }
+  }
+
   //write your code here
 
 
@@ -44,6 +55,9 @@ class launchpad
     int largest = findLargest(5,10);
     System.out.println("largest: "+largest);
 
+    /* Find difference between two numbers*/
+    int diff = findDiff(5,10);
+    System.out.println("Difference : " + diff);
     
     //write your code here
   }
